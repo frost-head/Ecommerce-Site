@@ -1,6 +1,6 @@
 .body{
     padding: 0vw 10vw;
-    --bs-gutter-x: 0rem
+    --bs-gutter-x: 0rem;
 }
 
 body{
@@ -15,6 +15,12 @@ nav{
 
     width: 85vw;
     height:65vh;
+    object-fit: cover;
+}
+
+.card-img{
+    width: 25vw;
+    height: 40vh;
     object-fit: cover;
 }
 
@@ -48,6 +54,7 @@ nav{
     justify-content: center;
     align-items: center;
     height: max-content;
+
 }
 
 .footer .col-md-6{
@@ -71,4 +78,21 @@ nav{
 }
 .footer h5{
     font-weight: 300;
+}
+
+.SectionTitle{
+    font-weight: 300;
+}
+.SectionSubtitle{
+    font-weight: 300;
+    font-style: italic;
+}
+
+.showcase{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    justify-items: center;
+    align-items: center;
 }

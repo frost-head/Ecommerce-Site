@@ -1,0 +1,25 @@
+{% extends 'Base.html' %}
+
+{% block head %}
+<title>
+    JPHA - Clothing Section
+</title>
+{% endblock %}
+
+
+{% block body %}
+    <div class="Clothing" style="margin-top: 25px; height: max-content;">
+    <h3 class="SectionTitle" >Clothing</h3>
+    <h6 class="SectionSubtitle">
+        "A way to express yourself."
+    </h6>
+    <div class="showcase">
+    {% for current in results %}
+    {% include 'includes/ClothCard.html' %}
+    {% endfor %}
+</div>
+    </div>
+
+    
+
+{% endblock %}
