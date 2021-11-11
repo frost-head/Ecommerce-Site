@@ -5,3 +5,31 @@
 nav{
     padding: 0vw 5vw;
 }
+
+.card-image{
+
+    width: 85vw;
+    height:65vh;
+    object-fit: cover;
+}
+
+.whatsNewText{
+    width: 100%;
+    text-align: center;
+    padding:10px 0px;
+}
+
+.whatsNewCardBody{  
+    margin: 10px 500px;
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.whatsNewCardBody h1{
+    font-weight: 300;
+}
+.whatsNewCardBody h4{
+    font-weight: 300;
+}

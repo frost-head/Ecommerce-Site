@@ -9,7 +9,37 @@
 {% endblock %}
 
 {% block body %}
+    <div class="whatsNew" style="margin-top: 25px; height: max-content;">
+    <h3 class="whatsNewText" >What's New</h3>
 
-    <h3>Home Page</h3>
+
+      <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            
+            {% for current in whatsNew %}
+              {% if current['active'] == 'True' %}
+              <div class="carousel-item active">
+                {% include 'includes/WhatsNewCard.html' %}
+              </div>
+              {% else %}
+              <div class="carousel-item ">
+                {% include 'includes/WhatsNewCard.html' %}
+              </div>
+              {% endif %}
+
+            {% endfor %}
+          </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev" style="justify-content:start;">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next" style="justify-content:end;">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+    
 
 {% endblock %}
