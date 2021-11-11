@@ -1,8 +1,13 @@
 .body{
     padding: 0vw 10vw;
+    --bs-gutter-x: 0rem
 }
 
-nav{
+body{
+    overflow-x: hidden;
+}
+
+nav{ 
     padding: 0vw 5vw;
 }
 
@@ -31,5 +36,39 @@ nav{
     font-weight: 300;
 }
 .whatsNewCardBody h4{
+    font-weight: 300;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    width: 100vw;
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: max-content;
+}
+
+.footer .col-md-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    flex-wrap: wrap;
+    
+
+}
+
+.footer a{
+    color: white;
+    text-decoration: none;
+}
+
+.footer h1{
+    font-weight: 300;
+}
+.footer h5{
     font-weight: 300;
 }
