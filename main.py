@@ -1,3 +1,4 @@
+from logging import error
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -18,5 +19,9 @@ def clothings():
     return render_template('Clothing.html',results=[{'title':'Check out are new skirts','price':'12','image':'/static/whatsNew1.jpeg','active':'True'},{'title':'Check out are new skirts','price':'12','image':'/static/whatsNew1.jpeg','active':'True'},{'active':'False','title':'Check out are new shirts','price':'1099','image':'/static/whatsNew2.jpeg'},{'title':'Check out are new skirts','price':'1299','image':'/static/whatsNew1.jpeg','active':'True'},{'active':'False','title':'Check out are new shirts','price':'1099','image':'/static/whatsNew2.jpeg'},{'title':'Check out are new skirts','price':'1299','image':'/static/whatsNew1.jpeg','active':'True'},{'active':'False','title':'Check out are new shirts','price':'1099','image':'/static/whatsNew2.jpeg'},{'title':'Check out are new skirts','price':'1299','image':'/static/whatsNew1.jpeg','active':'True'}])
 
 
+
+@app.errorhandler(404)
+def page_not_found(e):
+    return render_template('404.html'), 404
 
 app.run(debug=True, host= '0.0.0.0')

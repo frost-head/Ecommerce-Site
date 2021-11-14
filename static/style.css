@@ -104,10 +104,19 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    text-align: left;
 }
 form{
     font-size: 1.2rem ;
     border: rgb(187, 187, 187) 2px solid;
     padding: 50px;
     border-radius: 10px ;
+}
+.nav-right{
+    display: flex;
+    flex-direction: row;
+}
+.nav-right a{
+    text-decoration: none;
+    color: black;
 }
