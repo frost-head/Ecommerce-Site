@@ -96,3 +96,18 @@ nav{
     justify-items: center;
     align-items: center;
 }
+
+.center{
+    min-height: 70vh; 
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+form{
+    font-size: 1.2rem ;
+    border: rgb(187, 187, 187) 2px solid;
+    padding: 50px;
+    border-radius: 10px ;
+}
