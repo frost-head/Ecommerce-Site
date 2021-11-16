@@ -125,17 +125,15 @@ form{
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
-    align-content: space-between;
+    justify-content: space-evenly;
+    align-content: space-evenly;
     flex-wrap: wrap;
 }
 
 .clothimage{
-    flex: 1;
-    width: 120px;
+    width: 600px;
     height: 800px;
     object-fit: cover;
 }
 
-.clothdetails{
-    flex: 1;}       
+      

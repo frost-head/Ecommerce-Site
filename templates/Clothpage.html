@@ -7,16 +7,34 @@
 {% endblock %}
 
 {% block body %}
+<br>
+<br>
 <div class="clothdiv row">
-    <img src="/static/whatsNew1.jpeg" class="clothimage col-md-8" alt="">
-    <div class="clothdetails col-md-2">
+    <div class="col-md-6">
+
+    <div id="carouselExampleIndicators" class="carousel  slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/static/whatsNew1.jpeg" class="clothimage" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/whatsNew2.jpeg" class="clothimage" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="/static/whatsNew3.jpeg" class="clothimage" alt="">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div class="clothdetails col-md-4">
         <h1>Grey Skirt</h1>
         <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis unde ducimus mollitia quaerat, quidem dignissimos reprehenderit nisi nulla repudiandae ex repellat modi ad libero eius. Beatae dicta libero labore voluptatum quia neque fugiat illum autem cum corrupti vel quae corporis aliquid, officia accusamus aperiam similique quis minima, incidunt tempore? Iusto, aliquid minus, distinctio mollitia illum, quidem nemo quod itaque deleniti velit nobis quibusdam error debitis qui voluptatem incidunt vero architecto?
-
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex voluptatem adipisci nisi aperiam officiis dolorum corporis ratione, recusandae facilis sapiente dicta voluptate dolor, quasi earum. Sed nesciunt nihil earum cum, veniam at necessitatibus distinctio eligendi fuga? Nihil, dolor. Cumque dolorem adipisci facere autem libero optio maxime similique iure quaerat neque!
         </p>
         <h3>1299 INR</h3>
-        
+        <a href="#" class="btn btn-dark" style="width: 100%;">Buy Now</a>
+        <a href='#' class="btn btn-outline-dark" style="width: 100%; margin-top: 5px;">Add to cart</a>
     </div>
 </div>
 {% endblock %}
