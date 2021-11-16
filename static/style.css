@@ -120,3 +120,22 @@ form{
     text-decoration: none;
     color: black;
 }
+
+.clothdiv{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.clothimage{
+    flex: 1;
+    width: 120px;
+    height: 800px;
+    object-fit: cover;
+}
+
+.clothdetails{
+    flex: 1;}       
